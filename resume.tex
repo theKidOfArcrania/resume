@@ -1,0 +1,332 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Henry}{Wang}{
+  \href{mailto:wanghenry1998@gmail.com}{wanghenry1998@gmail.com} |
+  972.312.9510 | hhw170030@utdallas.edu}{github.com/\custombold{theKidOfArcrania} |
+  \href{https://thekidofarcrania.gitlab.io}{thekidofarcrania.gitlab.io}}
+\sectionsep
+
+\begin{tabular}{l l}
+\cellcolor{tintback} \begin{minipage}[t]{.36\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Texas At Dallas}
+\descript{BS in Computer Science}
+\location{Expected Dec 2020 | Richardson, TX \\ Current GPA: 3.968}
+Dean's scholar Spring 2018 \\
+AES Scholarship at Honors level \\
+Admission to CS$^2$ Honors
+\sectionsep
+
+%\subsection{Plano West High School}
+%\location{Grad. June 2017 | Plano, TX}
+%Ranked 76 of 1335
+%\sectionsep
+
+%\end{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github: \href{https://github.com/theKidOfArcrania}{theKidOfArcrania} \\
+Gitlab: \href{https://gitlab.com/theKidOfArcrania}{theKidOfArcrania} \\
+Website: \href{http://thekidofarcrania.gitlab.io}{thekidofarcrania.gitlab.io}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     OPENSOURCE PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Opensource Contributions}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%TODO: Edit this section
+\section{Coursework}
+
+\subsection{Undergraduate}
+
+Data structures \\
+Discrete Mathematics I, II \\
+C/C++ in Unix Environment \\
+Computer Architecture
+
+% \subsection{Graduate}
+% Advanced Machine Learning \\
+% Open Source Software Engineering \\
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing \\
+% \sectionsep
+
+% \subsection{Undergraduate}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+% Unix Tools and Scripting \\
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ORGANIZATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Organizations}
+\subsubsection{The Assembly Group | \small President}
+    August 2018-December 2018
+\sectionsep
+\subsubsection{Code Burners}
+    August 2017-December 2018
+\sectionsep
+\subsubsection{Computer Security Group}
+    August 2017-December 2018
+\sectionsep
+\subsubsection{Computer Club | \small Executive Officer}
+    August 2016-June 2017
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     VOLUNTEER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Volunteering}
+
+\subsection{CTF Workshop Organizer}
+\location{8 July 2017 | University of Texas at Dallas}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Organized workshop for cyber security. 
+\item Led presentations for binary exploitation and forensics.
+\item Also included web exploitation, reverse engineering, and cryptography.
+\end{tightemize}
+\sectionsep
+
+\subsection{AV Coordinator}
+\location{Aug. 2013 - June 2016 | Dallas Chinese Bible Church (1707 Campbell Trail, Richardson, TX)}
+\begin{tightemize}
+  \item Maintained powerpoint slides for my youth group at church
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     REFERENCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{References}
+%Available upon request
+
+\end{minipage}
+& \begin{minipage}[t]{.60\textwidth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+C \textbullet{} Assembly (x86, MIPS) \textbullet{} C++ \textbullet{} Java 
+  \textbullet{} Shell script \textbullet{} Makefile \\
+JavaScript \textbullet{} PHP \textbullet{} CSS \textbullet{} Python 
+  \textbullet{} \latex
+\sectionsep
+
+\subsection{Other Skills}
+git \textbullet{} vim \textbullet{} gdb \textbullet{} objdump 
+  \textbullet{} IDA \textbullet{} Linux Kernel Programming 
+  \textbullet{} i3 \\
+Basic unix commands \textbullet{} Ubuntu Linux \textbullet{} Windows
+
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{ITRI}
+\descript{| Research Intern }
+\location{May-July 2018 | Hsinchu, Taiwan}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Researched the internal components of AFL Fuzzer
+\item Proposed possible improvements to the fuzzing solution
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\subsection{RE\string^2 Assembly Language}
+\location{July 2017 | \small github.com/theKidOfArcrania/RE-2-Language}
+\begin{tightemize}
+\item Invented simple CISC 16-bit architecture
+\item Includes interpreter and assembler in Java
+\item Utilizes stack to push/pop intermediate values
+\end{tightemize}
+\sectionsep
+
+\subsection{Mission Turtle}
+\location{April-May 2017 | \small github.com/theKidOfArcrania/Mission-Turtle}
+\begin{tightemize}
+\item Created top-down maze game in Java
+\item Includes 21 levels in increasing difficulty
+\end{tightemize}
+\sectionsep
+
+\subsection{Blockly.io} 
+\location{February-March 2017 | \small github.com/theKidOfArcrania/BlocklyIO}
+\begin{tightemize}
+\item Created simple clone of Paper.io with Node.JS and socket.io
+\item Implements real-time multiplayer mode unlike paper.io
+\item Garnered some interest from other people
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACTIVITIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Activities}
+
+\subsection{The Assembly Group}
+\location{August-December 2018 | \small tag-utd.github.io}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize} 
+\item Founded organization fall 2018; current residing president
+\item Introduce assembly topics and applications (especially in security)
+\end{tightemize}
+\sectionsep
+
+\subsection{CTFLearn Problem Writer}
+\location{June 2017-December 2018 | ctflearn.com}
+\begin{tightemize} 
+\item Wrote a lot of CTF-style problems in various categories
+\item Started with forensics, then moved to reversing and binary exploitation
+\end{tightemize}
+\sectionsep
+
+\subsection{CTF-type competitions}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \custombold{Wargames/Individual:} pwnable.kr (Rank 190/19000+), pwnable.tw,
+  hackthebox.eu, exploit-exercises
+\item \custombold{CTF Events:} Google CTF 2018, blazectf, CSAW CTF Qual \\
+   picoCTF 2017 (Rank 12/12000+)
+\end{tightemize}
+\sectionsep
+
+%\subsection{ICPC Qualifiers}
+%\location{October 2017}
+%\begin{tightemize}\item Competed in a national-wide qualifier computer programming competition\item 4th place out of the UTD teams\end{tightemize}
+%\sectionsep
+
+%\subsection{Code Burners}
+%\location{August-December 2017}
+%\begin{tightemize}
+%\item Take algorithmic knowledge and applying them to problem solving\end{tightemize}
+%\sectionsep
+%
+%\subsection{Computer Security Group}
+%\location{August 2017-December 2018}
+%\begin{tightemize}
+%\item Learn about various aspects of computer security\end{tightemize}
+%\sectionsep
+%
+%\subsection{Computer Club Executive Officer}
+%\location{August 2016 - May 2017}
+%\begin{tightemize}
+%\item Managed computer club logistics \item Taught some lessons within computer club\end{tightemize}
+%\sectionsep
+
+\end{minipage}
+\end{tabular} 
+\end{document}
